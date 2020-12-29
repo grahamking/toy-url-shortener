@@ -12,7 +12,7 @@ async fn main() -> Result<(), reqwest::Error> {
     let mut url = String::from("http://localhost:3030/");
     url.push_str(&short_url);
     let body = reqwest::get(&url).await?.text().await?;
-    println!("{}", body);
+    println!("{}", &body[..306]);
 
     Ok(())
 }

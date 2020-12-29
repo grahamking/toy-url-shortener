@@ -11,6 +11,7 @@ warp = "0.2"
 tokio = {version = "0.2", features = ["full"]}
 serde = "1"
 serde_derive = "1"
-base-62 = "0.1.1"
+#base-62 = "0.1.1"
+base62num = "0.1"
 http = "0.2"
 reqwest = "0.10"
