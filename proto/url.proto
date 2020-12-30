@@ -1,0 +1,15 @@
+syntax = "proto3";
+package short;
+service Add {
+	rpc AddUrl(AddUrlRequest) returns (AddUrlResponse);
+}
+
+message AddUrlRequest {
+	string hash = 1;
+	string url = 2;
+}
+
+message AddUrlResponse {
+	string message = 1;
+}
+
